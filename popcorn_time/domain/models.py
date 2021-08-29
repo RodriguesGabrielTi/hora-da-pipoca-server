@@ -1,8 +1,7 @@
 from datetime import datetime
 import uuid
 
-from sqlalchemy import Column, String, Integer, ARRAY, Float, Date, ForeignKey, Boolean
-from sqlalchemy.orm import relationship
+from sqlalchemy import Column, String, Integer, Float, Date, ForeignKey, Boolean
 
 from .database import Base
 
@@ -17,7 +16,6 @@ class User(Base):
     password = Column(String)
     is_active = Column(Boolean, default=True)
     created_date = Column(Date, default=datetime.today())
-    new_field = Column(String)
 
 
 class Favorite(Base):

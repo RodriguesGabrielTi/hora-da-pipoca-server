@@ -7,7 +7,6 @@ class UserBase(BaseModel):
     nick_name: str
     full_name: str
     email: str
-    new_field: str
 
 
 class UserCreate(UserBase):
