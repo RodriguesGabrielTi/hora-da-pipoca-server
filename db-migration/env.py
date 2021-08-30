@@ -9,7 +9,7 @@ from alembic import context
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
-from popcorn_time.config.settings import SQLALCHEMY_DATABASE_URL
+from popcorn_time.config.settings import DATABASE_URL
 
 config = context.config
 
@@ -32,7 +32,7 @@ target_metadata = Base.metadata
 
 
 def get_url():
-    return SQLALCHEMY_DATABASE_URL
+    return DATABASE_URL
 
 
 def run_migrations_offline():
