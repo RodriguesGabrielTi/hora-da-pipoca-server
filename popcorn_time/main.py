@@ -4,9 +4,9 @@ import uvicorn
 from fastapi import FastAPI, HTTPException, Depends, Request, Response
 from sqlalchemy.orm import Session
 
-from .domain import models, schemas
-from .domain.database import engine, SessionLocal
-from .domain.service import UserService
+from popcorn_time.domain import models, schemas
+from popcorn_time.domain.database import engine, SessionLocal
+from popcorn_time.domain.service import UserService
 
 models.Base.metadata.create_all(bind=engine)
 
