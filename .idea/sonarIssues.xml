@@ -73,6 +73,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/db-migration/versions/2e702a5c1b74_update_movie.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/docker-compose.yml">
           <value>
             <set />
@@ -153,12 +158,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/popcorn_time/domain/service.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/popcorn_time/main.py">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/popcorn_time/requirements.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/popcorn_time/scripts/import_movies.py">
           <value>
             <set />
           </value>
