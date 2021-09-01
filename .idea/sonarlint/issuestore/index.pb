@@ -16,7 +16,3 @@ C
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 ;
 runtime.txt,2/e/2ed4029984f4a6c70a541992efb31f76528bd80d
-M
-popcorn_time/requirements.txt,c/9/c961027b205a23e984244b925453e0007e4e51f2
-@
-requirements.txt,1/9/19359a61ae2446b51b549167b014da2fcf265768
