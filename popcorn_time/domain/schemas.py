@@ -1,5 +1,17 @@
 from datetime import date
+from typing import Optional
+
 from pydantic import BaseModel
+
+
+# token
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    user_email: Optional[str] = None
 
 
 # user
@@ -7,6 +19,9 @@ class UserBase(BaseModel):
     nick_name: str
     full_name: str
     email: str
+
+    class Config:
+        orm_mode = True
 
 
 class UserCreate(UserBase):
@@ -19,7 +34,7 @@ class User(UserBase):
     created_date: date
 
     class Config:
-        orm_mode: True
+        orm_mode = True
 
 
 # movie
@@ -50,7 +65,7 @@ class Movie(MovieBase):
     id: str
 
     class Config:
-        orm_mode: True
+        orm_mode = True
 
 
 # favorite
