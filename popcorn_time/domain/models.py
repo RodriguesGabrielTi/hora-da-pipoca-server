@@ -26,17 +26,16 @@ class Favorite(Base):
     movie_id = Column(String(36), ForeignKey('movie.id'))
 
 
-
 class Movie(Base):
     __tablename__ = "movie"
 
     id = Column(String(36), primary_key=True, index=True, default=lambda: str(uuid.uuid4()))
     imdb_id = Column(String, unique=True, index=True)
     title = Column(String)
-    year = Column(String(4))
     rated = Column(String)
     released = Column(String)
     runtime_minutes = Column(Integer)
+    year = Column(String)
     genre = Column(String)
     director = Column(String)
     writer = Column(String)
@@ -46,8 +45,8 @@ class Movie(Base):
     country = Column(String)
     awards = Column(String)
     poster = Column(String)
-    rating_rotten_tomatoes = Column(String)
-    meta_score = Column(Integer)
+    rating_rotten_tomatoes = Column(String, nullable=True)
+    meta_score = Column(Integer, nullable=True)
     imdb_rating = Column(Float)
     imdb_votes = Column(Integer)
     type = Column(String)
