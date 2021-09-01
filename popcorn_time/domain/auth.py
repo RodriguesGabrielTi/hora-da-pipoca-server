@@ -6,10 +6,10 @@ from jose import jwt, JWTError
 from passlib.context import CryptContext
 from starlette.status import HTTP_401_UNAUTHORIZED
 
-from config import settings
-from config.settings import SECRET_KEY, ALGORITHM
-from domain.schemas import TokenData
-from domain.service import UserService
+from popcorn_time.config import settings
+from popcorn_time.config.settings import SECRET_KEY, ALGORITHM
+from popcorn_time.domain.schemas import TokenData
+from popcorn_time.domain.service import UserService
 
 
 class Auth:

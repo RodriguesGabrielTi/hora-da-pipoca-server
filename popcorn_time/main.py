@@ -6,9 +6,9 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from starlette.status import HTTP_401_UNAUTHORIZED
 
-from domain.schemas import Token, UserBase
-from domain.auth import Auth
-from domain.service import MovieService
+from popcorn_time.domain.schemas import Token, UserBase
+from popcorn_time.domain.auth import Auth
+from popcorn_time.domain.service import MovieService
 from popcorn_time.domain import models, schemas
 from popcorn_time.domain.database import engine, SessionLocal
 from popcorn_time.domain.service import UserService
@@ -43,7 +43,7 @@ async def app_middleware(request: Request, call_next):
 
 # user
 @app.post("/users/", response_model=schemas.User)
-def create_user(user: schemas.UserCreate,  db: Session = Depends(get_db), token: Session = Depends(oauth2_scheme)):
+def create_user(user: schemas.UserCreate,  db: Session = Depends(get_db)):
     user_service = UserService(db)
     db_user = user_service.get_user_by_email(email=user.email)
     if db_user:
