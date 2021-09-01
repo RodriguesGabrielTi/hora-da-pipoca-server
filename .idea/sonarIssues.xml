@@ -8,6 +8,26 @@
             <set />
           </value>
         </entry>
+        <entry key="/a.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/dummy.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/dumpDataPreview">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/6a820b6a-c6fc-413f-a923-1b677c02886c/console_1.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../Keeps/keeps-konquest-server/konquest/mission/models/mission_stage_content.py">
           <value>
             <set />
